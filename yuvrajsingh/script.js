@@ -3,7 +3,7 @@
 
 
 
-emailjs.init("paLXs4mlWSxQ8ZEU4");
+emailjs.init("_HEJvZZDMz38ngoXT");
 
 $(document).ready(function(){
     var animation = lottie.loadAnimation({
