@@ -27,7 +27,7 @@ $(document).ready(function(){
     $('#contactForm').on('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
   
-        emailjs.sendForm('service_ljdmta5', 'template_nw6bezu', '#contactForm')
+        emailjs.sendForm('service_ljdmta5', 'template_r55n5k', '#contactForm')
           .then(function(response) {
             alert('Your message has been sent successfully!');
             $('#contactForm')[0].reset(); // Reset form fields after successful submission
