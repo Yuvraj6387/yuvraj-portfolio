@@ -11,7 +11,7 @@ $(document).ready(function(){
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: './imgs/preloader.json'
+        path: './imgs/Animation - 1752080169389.json'
     });
 
     setTimeout(function() {
