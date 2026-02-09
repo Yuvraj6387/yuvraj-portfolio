@@ -11545,6 +11545,10 @@ pre .code {
   transform: none !important;
 }
 
+#vanta-bg .header-content a.btn + a.btn{
+  margin-left: 13px;
+}
+
 #vanta-bg .header-center {
   height: 100%;
   display: flex;
