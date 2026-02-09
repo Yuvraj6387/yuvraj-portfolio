@@ -11529,70 +11529,72 @@ pre .code {
   background: #17263C;
 }
 
-.header {
+
+ header {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./imgs/1369946.png);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./imgs/1369946.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: #fff;
+  overflow: hidden;
 }
 
-.header .container {
-  position: relative;
+/* HEADER BASE */
+/* FORCE EVERYTHING HORIZONTAL */
+#vanta-bg * {
+  writing-mode: horizontal-tb !important;
+  transform: none !important;
+}
+
+#vanta-bg .header-center {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.header .header-content {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 55%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  color: #fff;
+#vanta-bg .header-content {
+  max-width: 600px;
+  padding-left: 40px;
+  text-align: left;
 }
 
-.header .header-content .header-subtitle {
-  font-weight: 200;
-  font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+#vanta-bg .header-subtitle {
+  position: relative;
+  font-size: 3rem;
+  opacity: 0.9;
+  top: 32px;
 }
 
-.header .header-content .header-title {
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: bold;
-  line-height: .7;
-  margin-bottom: 25px;
-  color: inherit;
+#vanta-bg .header-title {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
-.header .header-content .header-mono {
-  letter-spacing: 5px;
-  font-weight: 500;
-  font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
-  margin-bottom: 40px;
+#vanta-bg .header-mono {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 767.98px) {
-  .header {
-    height: 500px;
-    min-height: 500px;
+
+
+
+
+@media (max-width: 768px) {
+  #vanta-bg .header-content {
+    padding-left: 0;
+    text-align: center;
   }
-  .header .social-icons {
-    margin: auto;
-  }
-  .header .header-content {
-    padding: 20px;
-  }
-  .header .header-content .header-mono {
-    letter-spacing: 2px;
+
+  #vanta-bg .header-center {
+    justify-content: center;
   }
 }
+
+
 
 .header-title {
   font-size: 2.4rem;

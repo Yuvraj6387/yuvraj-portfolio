@@ -17,19 +17,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.3/lottie.min.js"></script>
+    
+
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <div id="preloader" class="preloader">
         <div id="lottie-animation" class="preloader-animation"></div>
     </div>
-    <header class="header" id="home">
-        <div class="container">
+    <header id="vanta-bg">
+        <div class="container header-center">
             <div class="header-content">
                 <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title">Yuvraj Singh</h1>
+                <h1 class="header-title" style="color: white;">Yuvraj Singh</h1>
                 <h6 class="header-mono" >Full Stack MERN Developer</h6>
-                <a href="./imgs/yuvraj.resume.pdf.pdf" class="btn btn-primary btn-rounded" download="yuvraj.resume.pdf.pdf">
+                <a href="./imgs/Yuvraj_Resume.pdf" class="btn btn-primary btn-rounded" download="Yuvraj_Resume.pdf">
                     <i class="ti-printer pr-2"></i> Download Resume
                   </a>&nbsp;&nbsp;&nbsp;
 
@@ -218,6 +220,17 @@ minimal latency.<br>
                             
                             </p>
 
+                            <hr>
+                            <h6 class="title text-danger">giphy-Clone</h6>
+                              <a href="https://lnkd.in/d5xD5BQi" style="color: #74C0FC;">Live Demo<i class="fa-solid fa-globe" style="color: #74C0FC;"></i></a>
+                            <p>
+                                Developed a fully responsive Giphy clone using React for component-based architecture and Tailwind CSS for modern UI styling. Integrated the Giphy API to fetch trending GIFs and enable real-time search functionality. Implemented reusable components, loading states, and optimized UI for both desktop and mobile devices.
+                            </p>
+
+                             <p>Technologies Employed:
+                                <li class="skills"><i class="fa-brands fa-react"></i>
+                            
+                            </p>
                             
                             
                         </div>
@@ -260,6 +273,21 @@ minimal latency.<br>
                             <ul>
                                 <li class="skills"><i class="fa-regular fa-circle-check"></i>
                                     <h6>MERN Stack</h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="skills"><i class="fa-brands fa-html5"></i>
+                                     <h6>HTML5</h6>
+                                </li>
+                            </ul>
+                             <ul>
+                                <li class="skills"><i class="fa-brands fa-css3"></i>
+                                     <h6>CSS3</h6>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="skills"><i class="fa-brands fa-java"></i>
+                                     <h6>Java</h6>
                                 </li>
                             </ul>
                             <ul>
@@ -384,6 +412,31 @@ minimal latency.<br>
    
     <!-- JohnDoe js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- THREE.js (mandatory) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+<!-- VANTA BIRDS -->
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  VANTA.BIRDS({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200,
+    minWidth: 200,
+    scale: 1,
+    scaleMobile: 1,
+   backgroundColor: 0x71c2f,
+  color1: 0xff0078,
+  color2: 0xff17
+  });
+});
+</script>
+
+
     
     <script src="./script.js"></script>
     
