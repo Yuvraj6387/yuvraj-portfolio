@@ -11584,19 +11584,40 @@ pre .code {
 }
 
 
-
+.header-buttons{
+ font-size: 1.05rem;      /* text thoda bada */
+  padding: 12px 18px;      /* TOP-BOTTOM | LEFT-RIGHT kam */
+  border-radius: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
 
 
 @media (max-width: 768px) {
-  #vanta-bg .header-content {
-    padding-left: 0;
-    text-align: center;
+
+  #vanta-bg .header-buttons {
+    display: flex;            /* MOST IMPORTANT */
+    flex-direction: column;   /* stack vertically */
+    align-items: center;
+    gap: 14px;
   }
 
-  #vanta-bg .header-center {
+  #vanta-bg .header-buttons a {
+    width: 85%;
+    max-width: 280px;
     justify-content: center;
   }
+
+  .btn {
+    position: relative;       /* absolute kill */
+    padding: 11px 16px;
+    font-size: 0.95rem;
+    border-radius: 24px;
+  }
 }
+
 
 
 
